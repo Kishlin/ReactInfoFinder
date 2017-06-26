@@ -28,7 +28,7 @@
     "react-dom": "^0.14.7"
   },
   "scripts": {
-    "deploy": "gh-pages -d web/dist",
+    "deploy": "gh-pages -d dist",
     "start": "gulp"
   }
 }
