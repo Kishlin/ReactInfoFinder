@@ -2,7 +2,7 @@ var AppActions = require('../actions/AppActions');
 
 module.exports = {
 	searchText: function(search) {
-		var url = 'http://api.duckduckgo.com/?q=' + search.text +  '&format=json&pretty=1';
+		var url = 'https://api.duckduckgo.com/?q=' + search.text +  '&format=json&pretty=1';
 		$.ajax({
 			url: url,
 			dataType: 'jsonp',
