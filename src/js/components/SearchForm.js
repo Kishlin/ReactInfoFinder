@@ -16,6 +16,14 @@ var SearchForm = React.createClass({
 		);
 	},
 
+	searchText: function(e) {
+		e.preventDefault();
+		
+		var search = {
+			text: this.refs.text.value.trim()
+		}
+		AppActions.searchText(search);
+	}
 });
 
 module.exports = SearchForm;

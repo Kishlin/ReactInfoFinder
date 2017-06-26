@@ -6,7 +6,8 @@ var SearchResults = require('./SearchResults');
 
 function getAppState(){
 	return {
-
+		topics: AppStore.getTopics(),
+		searchText: AppStore.getSearchText()
 	}
 }
 
@@ -24,6 +25,8 @@ var App = React.createClass({
 	},
 
 	render: function(){
+		console.log(this.state.topics);
+		
 		return(
 			<div>
 				<SearchForm />
